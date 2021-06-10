@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+    <style>
+      a[href="www.naver.com"] {
+        color: green;
+        font-size: x-large;
+        text-decoration: none;
+      }
+      a[href^="https"] {
+        color: hotpink;
+        font-size: x-small;
+        text-decoration: line-through;
+      }
+      a[href*="google"] {
+        color: maroon;
+        font-size: xx-large;
+        text-decoration-line: overline;
+      }
+      a[href$="e.com"] {
+        color: blue;
+        text-decoration-line: none;
+        cursor: zoom-in;
+      }
+      /* 내가 임의로 만든 속성도 선택 가능 */
+      a[myatt] {
+        color: red;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="www.naver.com">네이버</a>
+    <a href="https://www.naver.com"> HTTPS 네이버</a>
+    <a href="www.google.co.kr">구글</a>
+    <a href="google.com">com구글</a>
+    <a myatt="이것도 되나">테스트 속성</a>
+  </body>
+</html>

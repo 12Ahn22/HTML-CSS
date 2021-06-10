@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>회원 가입 페이지</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+
+    <style>
+      p {
+        width: 150px;
+        margin: 0;
+        float: left;
+        line-height: 34px;
+        cursor: default;
+      }
+
+      li {
+        margin-top: 20px;
+        height: 34px;
+      }
+      li::marker {
+        color: red;
+      }
+      input {
+        width: 300px;
+        font-size: 17px;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" style="max-width: 800px; margin: 0 auto">
+      <h1>개인 구매회원 가입</h1>
+      <hr />
+      <div style="margin-bottom: 50px; color: gray; font-size: 14px">
+        회원정보를 입력해주세요. 모두 입력하셔야 가입이 가능합니다
+      </div>
+
+      <ul style="margin: 0 auto; width: 650px">
+        <li>
+          <p>이름</p>
+          <input type="text" name="name" placeholder="이름을 입력해주세요" />
+        </li>
+
+        <li>
+          <p>ID</p>
+          <input type="text" name="id" placeholder="ID를 입력해주세요" />
+          <input
+            type="button"
+            value="중복확인"
+            style="
+              width: auto;
+              background-color: gray;
+              color: #fff;
+              font-size: 15px;
+              cursor: pointer;
+            "
+          />
+        </li>
+
+        <li>
+          <p>비밀번호</p>
+          <input
+            type="password"
+            name="pwd"
+            placeholder="비밀번호를 입력해주세요"
+          />
+        </li>
+
+        <li>
+          <p>비밀번호 확인</p>
+          <input
+            type="password"
+            name="pwd2"
+            placeholder="비밀번호를 다시 한번 입력해주세요"
+          />
+        </li>
+
+        <li>
+          <p>휴대폰</p>
+          <select name="통신사" style="font-size: 18px; width: 80px">
+            <option value="skt">SKT</option>
+            <option value="kt">KT</option>
+            <option value="lg">LG</option>
+          </select>
+          -
+          <input
+            type="tel"
+            name="tel"
+            style="width: 150px"
+            placeholder="휴대폰 번호 (-제외)"
+          />
+        </li>
+
+        <div style="margin-left: 140px; margin-top: 20px">
+          <label
+            ><input
+              type="checkbox"
+              name="SMS"
+              style="width: auto"
+            />이벤트/쇼핑혜택 SMS 수신 동의
+            <span style="color: red; font-size: 14px">(선택)</span></label
+          >
+          <br />
+          <label
+            ><input
+              type="checkbox"
+              name="Email"
+              style="width: auto"
+            />이벤트/쇼핑혜택 이메일 수신 동의
+            <span style="color: red; font-size: 14px">(선택)</span></label
+          >
+        </div>
+      </ul>
+
+      <hr />
+      <div style="text-align: center">
+        <input
+          type="button"
+          value="회원가입"
+          style="
+            clear: both;
+            background-color: red;
+            font-size: 18px;
+            color: #fff;
+            padding: 5px 25px;
+            cursor: pointer;
+            width: auto;
+          "
+        />
+      </div>
+    </form>
+  </body>
+</html>
