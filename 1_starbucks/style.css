@@ -187,7 +187,8 @@
   height: 100%;
   background-color: #017143;
   /* 
-  
+    포토샵 마스크 클리핑과 비슷하다
+    보여줄 부분을 정해서 보여준다.
   */
   clip-path: circle(600px at right 900px);
 }
