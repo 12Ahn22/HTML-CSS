@@ -12,7 +12,7 @@
     container로 내부 요소들의 기본적인 레이아웃을 잡아준다
   -->
   <div class="container">
-    <div class="circle"></div>
+    <div class="circle" id="circle"></div>
     <!-- header -->
     <header class="header">
       <a href="#" class="header__logo"><img src="./img/logo.png" alt="logo" ></a>
@@ -35,14 +35,14 @@
       </div>
       <!-- image -->
       <div class="content__image">
-          <img src="./img/img1.png" alt="beverage" class="beverage-image">
+          <img src="./img/img1.png" alt="beverage" id="beverage" class="beverage-image">
       </div>
     </section>
     <!-- thumb -->
     <ul class="thumb">
-      <li class="thumb__item"><img src="./img/thumb1.png" alt="thumbnail"></li>
-      <li class="thumb__item"><img src="./img/thumb2.png" alt="thumbnail"></li>
-      <li class="thumb__item"><img src="./img/thumb3.png" alt="thumbnail"></li>
+      <li class="thumb__item" onclick="changeImage('img/img1.png'); changeCircleColor('#017143');"><img src="./img/thumb1.png" alt="thumbnail"></li>
+      <li class="thumb__item" onclick="changeImage('img/img2.png'); changeCircleColor('#eb7495');"><img src="./img/thumb2.png" alt="thumbnail"></li>
+      <li class="thumb__item" onclick="changeImage('img/img3.png'); changeCircleColor('#d752b1');"><img src="./img/thumb3.png" alt="thumbnail"></li>
     </ul>
     <!-- sns -->
     <ul class="sns">
@@ -51,5 +51,16 @@
       <li class="sns__item"><a href="#"><img src="./img/instagram.png" alt="instagram"></a></li>
     </ul>
   </div>
+
+  <!-- script -->
+  <script>
+    const changeImage = (imgURL)=>{
+      document.querySelector('#beverage').src = imgURL;
+    }
+    const changeCircleColor = (color)=>{
+      const circle = document.querySelector('#circle');
+      circle.style.backgroundColor = color;
+    }
+  </script>
 </body>
 </html>
