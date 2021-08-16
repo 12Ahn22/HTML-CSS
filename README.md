@@ -16,6 +16,8 @@
 ### 📁1_starbucks
 **스타벅스 랜딩페이지** [링크](https://www.youtube.com/watch?v=91Q6RvKvd7o)
 
+![스타벅스랜딩페이지20210816_131338](https://user-images.githubusercontent.com/44540726/129510676-6caf25a2-8302-4783-a598-52fc5b22c30c.gif)
+
 #### 공부
 + `position: relative;`
   
