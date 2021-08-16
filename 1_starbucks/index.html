@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starbucks Website Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 
+    container로 내부 요소들의 기본적인 레이아웃을 잡아준다
+  -->
+  <div class="container">
+    <div class="circle"></div>
+    <!-- header -->
+    <header class="header">
+      <a href="#" class="header__logo"><img src="./img/logo.png" alt="logo" ></a>
+      <ul class="header__menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">What's New</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+    <!-- contents 
+    <section> 연관 있는 내용들을 묶어줄 때 사용하는 시맨틱 태그
+    -->
+    <section class="content">
+      <!-- text -->
+      <div class="content__text">
+        <h2>It's not just Coffee<br/>It's <span>Starbucks</span></h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos facilis vel distinctio dolores rerum odit consequuntur vero nesciunt tempore. Cumque.</p>
+        <a href="#">Learn More</a>
+      </div>
+      <!-- image -->
+      <div class="content__image">
+          <img src="./img/img1.png" alt="beverage" class="beverage-image">
+      </div>
+    </section>
+    <!-- thumb -->
+    <ul class="thumb">
+      <li class="thumb__item"><img src="./img/thumb1.png" alt="thumbnail"></li>
+      <li class="thumb__item"><img src="./img/thumb2.png" alt="thumbnail"></li>
+      <li class="thumb__item"><img src="./img/thumb3.png" alt="thumbnail"></li>
+    </ul>
+    <!-- sns -->
+    <ul class="sns">
+      <li class="sns__item"><a href="#"><img src="./img/facebook.png" alt="facebook"></a></li>
+      <li class="sns__item"><a href="#"><img src="./img/twitter.png" alt="twitter"></a></li>
+      <li class="sns__item"><a href="#"><img src="./img/instagram.png" alt="instagram"></a></li>
+    </ul>
+  </div>
+</body>
+</html>
