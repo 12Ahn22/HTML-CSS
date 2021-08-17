@@ -8,19 +8,25 @@
     <title>Video Landing Page</title>
   </head>
   <body>
-    <section class="showcase">
+    <section class="showcase active">
       <header class="header">
-        <h2 class="logo">HarryPotter</h2>
-        <div class="toogle"></div>
+        <h2 class="logo"><a href="#">Harry Potter</a></h2>
+        <div class="toggle active"></div>
       </header>
 
-      <video src="../src/video/lucius.mp4" muted loop autoplay></video>
+      <video
+        class="showcase__video"
+        src="../src/video/lucius.mp4"
+        muted
+        loop
+        autoplay
+      ></video>
 
       <div class="overlay"></div>
 
       <!-- text content -->
       <div class="content">
-        <h2 class="content__title">Harryp Potter</h2>
+        <h2 class="content__title">Harry Potter</h2>
         <h3 class="content__subtitle">Order of the Phoenix</h3>
         <p class="content__text">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id deleniti
@@ -43,7 +49,8 @@
       </ul>
     </section>
 
-    <div class="menu">
+    <!-- Menu -->
+    <nav class="menu">
       <ul>
         <li class="menu__item"><a href="#">Home</a></li>
         <li class="menu__item"><a href="#">News</a></li>
@@ -51,6 +58,8 @@
         <li class="menu__item"><a href="#">Blogs</a></li>
         <li class="menu__item"><a href="#">Contact</a></li>
       </ul>
-    </div>
+    </nav>
+
+    <!-- script -->
   </body>
 </html>

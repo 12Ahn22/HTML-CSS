@@ -1,1 +1,206 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* root */
+:root {
+  --overlay-color: #53ffe8;
+  --main-color: #078554;
+}
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  /* 
+    border-box : 테두리와 안쪽 여백의 크기도 요소의 크기로 고려
+  */
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* showcase */
+.showcase {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  color: #fff;
+  /* position 속성이 없으면 z-index는 반영이 안된다. */
+  z-index: 2;
+}
+/* 메뉴를 보여준다. */
+.showcase.active {
+  right: 300px;
+}
+
+/* Header */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.logo a {
+  text-decoration: none;
+  color: #fff;
+}
+/* Toggle */
+.toggle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: url('https://i.ibb.co/HrfVRcx/menu.png');
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  cursor: pointer;
+}
+.toggle.active {
+  background: url('https://i.ibb.co/rt3HybH/close.png');
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+  cursor: pointer;
+}
+
+/* Video */
+.showcase .showcase__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+/* Content */
+.content {
+  position: relative;
+  z-index: 10;
+}
+.content .content__title {
+  font-size: 4em;
+  font-weight: 700;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.content .content__subtitle {
+  font-size: 3em;
+  font-weight: 600;
+  line-height: 1em;
+}
+.content .content__text {
+  font-size: 1.1em;
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 700px;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 1em;
+  background-color: #fff;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #333;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.2s ease;
+}
+.btn:hover {
+  letter-spacing: 6px;
+}
+
+/* SNS */
+.sns {
+  position: absolute;
+  bottom: 20px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sns .sns__item {
+  list-style: none;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+.sns .sns__item a {
+  filter: invert(1);
+  display: inline-block;
+  transform: scale(0.5);
+  transition: 0.5s ease;
+}
+.sns .sns__item a:hover {
+  transform: scale(0.5) translateY(-15px);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: #53ffe8; */
+  background-color: var(--overlay-color);
+  opacity: 0.8;
+  mix-blend-mode: overlay;
+}
+
+/* 토글 버튼 클릭 시, 나타나는 메뉴 */
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu ul {
+  position: relative;
+  list-style: none;
+}
+.menu .menu__item a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #111;
+}
+.menu .menu__item a:hover {
+  color: var(--main-color);
+}
+
+/* Media query */
+/* 798px 보다 작을 경우 */
+@media (max-width: 798px) {
+  .showcase,
+  .header {
+    padding: 40px;
+  }
+
+  .content .content__title {
+    font-size: 3em;
+  }
+  .content .content__subtitle {
+    font-size: 2em;
+  }
+}
