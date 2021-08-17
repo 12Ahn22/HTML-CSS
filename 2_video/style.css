@@ -31,6 +31,7 @@
   color: #fff;
   /* position 속성이 없으면 z-index는 반영이 안된다. */
   z-index: 2;
+  transition: 0.7s ease;
 }
 /* 메뉴를 보여준다. */
 .showcase.active {
@@ -202,5 +203,9 @@
   }
   .content .content__subtitle {
     font-size: 2em;
+  }
+  .content .content__text {
+    font-size: 1em;
+    max-width: 500px;
   }
 }

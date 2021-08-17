@@ -8,10 +8,10 @@
     <title>Video Landing Page</title>
   </head>
   <body>
-    <section class="showcase active">
+    <section class="showcase active" id="showcase">
       <header class="header">
         <h2 class="logo"><a href="#">Harry Potter</a></h2>
-        <div class="toggle active"></div>
+        <div class="toggle active" id="toggle"></div>
       </header>
 
       <video
@@ -61,5 +61,14 @@
     </nav>
 
     <!-- script -->
+    <script>
+      const menuToggle = document.querySelector('#toggle');
+      const showcase = document.querySelector('#showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      });
+    </script>
   </body>
 </html>
