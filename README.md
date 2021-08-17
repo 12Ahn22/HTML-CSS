@@ -17,7 +17,9 @@
 
 ### 📁1_starbucks
 
-**스타벅스 랜딩페이지** [링크](https://www.youtube.com/watch?v=91Q6RvKvd7o)
+**스타벅스 랜딩페이지** 
+
+[유튜브링크](https://www.youtube.com/watch?v=91Q6RvKvd7o)
 
 ![스타벅스랜딩페이지20210816_131338](https://user-images.githubusercontent.com/44540726/129510676-6caf25a2-8302-4783-a598-52fc5b22c30c.gif)
 
@@ -62,7 +64,9 @@
 
 ### 📁2_video
 
-**비디오를 백그라운드로 사용하는 랜딩페이지** [링크](https://www.youtube.com/watch?v=8MgpE2DTTKA)
+**비디오를 백그라운드로 사용하는 랜딩페이지** 
+
+[유튜브링크](https://www.youtube.com/watch?v=8MgpE2DTTKA)
 
 ![비디오랜딩페이지20210817_142635](https://user-images.githubusercontent.com/44540726/129668487-27a42260-f0d3-4f77-9d6c-3a0e04141525.gif)
 
