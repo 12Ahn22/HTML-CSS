@@ -1,7 +1,10 @@
 # HTML&CSS 강의
 
 [Online Tutorials](https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog)
+
 [Traversy Media](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA)
+
+[Easy Tutorials](https://www.youtube.com/channel/UCkjoHfkLEy7ZT4bA2myJ8xA)
 
 유튜브를 보고 작업한 내용들을 저장하는 레포지토리입니다.
 
@@ -12,3 +15,4 @@
 
 1. ✨ [스타벅스 랜딩페이지](./1_starbucks)
 2. ✨ [비디오 백그라운드](./2_video)
+3. ✨ [반응형 웹페이지1](./3_responsiveWeb1)
