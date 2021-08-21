@@ -42,22 +42,6 @@ const getFebDays = (year) => {
   return isLeapYear(year) ? 29 : 28;
 };
 
-// 월별 일수
-const days_of_month = [
-  31,
-  getFebDays(year),
-  31,
-  30,
-  31,
-  30,
-  31,
-  31,
-  30,
-  31,
-  30,
-  31,
-];
-
 const month_names = [
   'January',
   'Fabruary',
@@ -75,6 +59,21 @@ const month_names = [
 
 // 캘린더 생성하기
 const generateCalendar = (month, year) => {
+  // 월별 일수
+  const days_of_month = [
+    31,
+    getFebDays(year),
+    31,
+    30,
+    31,
+    30,
+    31,
+    31,
+    30,
+    31,
+    30,
+    31,
+  ];
   // 현재 날짜
   const currentDate = new Date();
   // 입력받은 월 / 년도를 헤더에 설정
