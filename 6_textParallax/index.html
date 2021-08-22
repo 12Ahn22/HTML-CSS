@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Text Parallax</title>
+  </head>
+  <body>
+    <section>
+      <!-- 오른쪽 -->
+      <div class="skew1">
+        <h2 class="layer">Corner Text</h2>
+      </div>
+      <!-- 왼쪽 -->
+      <div class="textBox">
+        <div class="skew2">
+          <h2 class="layer">Corner Text</h2>
+        </div>
+      </div>
+    </section>
+    <!-- 스크립트 -->
+    <script>
+      const parallaxText = function (e) {
+        // this = document
+        // 여러 요소들을 셀렉가능
+        console.log(window.innerWidth, e.pageX);
+        this.querySelectorAll('.layer').forEach((layer) => {
+          // window.innerWidth
+          // : 브라우저 윈도우의 뷰포트 너비( 스크롤바 포함)
+          // e.pageX - 여기서 e는 mousemove 이다.
+          // pageX는 전체 문서를 기준으로 하는 x 좌표
+
+          let x = (window.innerWidth - e.pageX * 2) / 2;
+          console.log('x', x);
+          layer.style.transform = `translateX(${x}px)`;
+        });
+      };
+
+      document.addEventListener('mousemove', parallaxText);
+    </script>
+  </body>
+</html>
