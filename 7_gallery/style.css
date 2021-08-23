@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background-color: #ecf4fb;
+}
+
+.img-gallery {
+  width: 80%;
+  /* 위 좌우 아래 */
+  margin: 100px auto 50px;
+  display: grid;
+  /* auto-fit은 행열 개수가 명확할 필요가 없거나
+  명확하지 않은 경우 사용한다.
+  컨테이너 크기를 초과할 경우 자동으로 줄바꿈을 한다.
+  auto-fit은 남는 공간을 축소 / auto-fill은 유지
+  */
+  /* minmax(최소값,최대값) */
+  /* grid-template-columns: repeat(auto-fit, 300px); 
+  min-max에서 최대값을 1fr을 주지않으면,
+  컨테이너의 남는 공간이 있으면 그 공간이 비어버린다.
+  */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+.img-gallery img {
+  width: 100%;
+  cursor: pointer;
+  height: 300px;
+  object-fit: cover;
+  transition: 0.5s ease-in-out;
+}
+
+.img-gallery img:hover {
+  /* img태그들에는 befor나 after같은 가상 요소 사용 불가 */
+  /* transform: scale(0.8) rotate(-15deg); */
+  border-radius: 20px;
+  filter: grayscale(1);
+}
+
+.full-img {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  /*  */
+  display: none;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.full-img.active {
+  display: flex;
+}
+.full-img img {
+  max-width: 500px;
+  /* 부모의 너비의 80%를 가지게한다 */
+  width: 80%;
+}
+
+.btn {
+  border: none;
+  background: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.full-img .btn {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
