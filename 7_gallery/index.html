@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Image Gallery</title>
+  </head>
+  <body>
+    <section class="full-img" id="fullImgBox">
+      <img src="../src/img/1.jpg" alt="image in modal" id="fullImg" />
+      <button class="btn" onclick="closeFullImg()">X</button>
+    </section>
+    <section class="img-gallery" id="imgGallery">
+      <!-- 모든 요소에 이벤트를 걸어주는 건 불편 -->
+      <img src="../src/img/1.jpg" alt="random" />
+      <img src="../src/img/2.jpg" alt="random" />
+      <img src="../src/img/3.jpg" alt="random" />
+      <img src="../src/img/4.jpg" alt="random" />
+      <img src="../src/img/5.jpg" alt="random" />
+      <img src="../src/img/6.jpg" alt="random" />
+      <img src="../src/img/7.jpg" alt="random" />
+      <img src="../src/img/8.jpg" alt="random" />
+    </section>
+
+    <script>
+      // DOM요소
+      const fullImgBox = document.getElementById('fullImgBox');
+      const fullImg = document.getElementById('fullImg');
+      const imgGallery = document.getElementById('imgGallery');
+      const closeFullImg = () => {
+        fullImgBox.classList.remove('active');
+      };
+      const openFullImg = (e) => {
+        if (e.target.nodeName !== 'IMG') return;
+        fullImgBox.classList.add('active');
+        // 이벤트가 전달한 객체
+        console.log(e.target);
+        // 이벤트 핸들러를 호출하는 객체
+        console.log(e.currentTarget);
+        fullImg.src = e.target.src;
+      };
+
+      // 이벤트 처리
+      imgGallery.addEventListener('click', openFullImg);
+    </script>
+  </body>
+</html>
