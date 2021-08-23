@@ -1,4 +1,4 @@
-### 📁3_responsiveWeb1
+## 📁3_responsiveWeb1
 
 **반응형 웹페이지 만들기**
 
@@ -6,7 +6,7 @@
 
 ![반응형 웹페이지](http://drive.google.com/uc?export=view&id=1J8CRh80uFNyWLASx2-RhFzNIX_cAmswZ)
 
-#### 공부
+## 공부
 
 - 정적 웹 페이지를 반응형으로 만들어보기
 
