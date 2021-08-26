@@ -4,7 +4,7 @@
 
 [유튜브링크](https://www.youtube.com/watch?v=zf1C1peIk8I)
 
-<video width='500' autoplay loop> 
+<video width='500px' autoplay loop> 
   <source src="https://user-images.githubusercontent.com/44540726/130917635-f839751c-7ff4-4300-a247-b17e3b9aad15.mp4" >
 </video>
 
