@@ -4,9 +4,8 @@
 
 [유튜브링크](https://www.youtube.com/watch?v=zf1C1peIk8I)
 
-<video width='500px' autoplay loop> 
-  <source src="https://user-images.githubusercontent.com/44540726/130917635-f839751c-7ff4-4300-a247-b17e3b9aad15.mp4" >
-</video>
+![드롭다운20210826_162142](https://user-images.githubusercontent.com/44540726/130919219-38de7524-1534-4582-aaa3-794e0f9ea31c.gif)
+
 
 ## 공부
 
@@ -26,4 +25,4 @@
 
 ---
 
-.gif가 매우매우 효율이 좋지않다는 글을 봐서 mp4로 올리기로 했다.
+.gif가 매우매우 효율이 좋지않다는 글을 봐서 mp4로 올리기로 했다...는 안올라간다..^^ㅜ
