@@ -29,3 +29,4 @@
 7. ✨ [그리드 갤러리 ](./7_gallery) - Grid CSS 사용하기 & 이벤트 위임
 8. ✨ [CSS 애니메이션](./8_cssAnimation) - HTML과 CSS만을 사용한 애니메이션 만들기
 9. ✨ [드롭다운](./9_dropBox) - HTML&CSS로 드롭다운, JS로 리액트를 흉내내서 드롭다운 만들어보기
+10. ✨ [반응형 랜딩페이지](./10_responsiveLandingPage) - flex와 미디어 쿼리를 사용해 랜딩페이지 만들기
