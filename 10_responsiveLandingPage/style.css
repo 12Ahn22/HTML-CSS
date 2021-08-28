@@ -1,0 +1,235 @@
+/* https://i.ibb.co/HrfVRcx/menu.png */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  /* 
+    border-box : 테두리와 안쪽 여백의 크기도 요소의 크기로 고려
+  */
+  /* box-sizing: border-box; */
+  font-family: 'Poppins', sans-serif;
+}
+
+/* 공통 */
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 8%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* navbar */
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .navbar__logo {
+  width: 50px;
+  cursor: pointer;
+  margin: 10px 0;
+  height: 50px;
+  object-fit: cover;
+}
+.navbar .navbar__menus {
+  /* 남은 너비를 다 가져감 */
+  flex: 1;
+  text-align: right;
+}
+.navbar .navbar__menus ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 30px;
+}
+.navbar .navbar__menus ul li a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #000;
+}
+.navbar .navbar__menus ul li a:hover {
+  color: #d34d75;
+}
+.navbar .navbar__btn {
+  filter: invert(1);
+  width: 32px;
+  height: 32px;
+  display: none;
+}
+.navbar .navbar__btn img {
+  width: 100%;
+  object-fit: contain;
+}
+
+/* landing */
+.landing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 0;
+  position: relative;
+}
+.landing .landing__text::after {
+  /* content가 없으면 안보임 */
+  content: '';
+  width: 10px;
+  height: 57%;
+  background: #d34d75;
+  position: absolute;
+  left: -40px;
+  top: 8px;
+}
+
+.landing .landing__text {
+  flex-basis: 40%;
+  position: relative;
+  margin-left: 50px;
+  margin-right: 4rem;
+}
+.landing .landing__text h2 {
+  font-size: 3rem;
+}
+.landing .landing__text h3 {
+  font-size: 1.5rem;
+  color: #666;
+  font-weight: 100;
+  margin-bottom: 1rem;
+}
+.landing .landing__text h4 {
+  margin-bottom: 1rem;
+}
+
+.landing .landing__btn {
+  background: linear-gradient(to right, #d34d75, rgb(255, 149, 149));
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  text-align: center;
+  transition: 0.5s ease;
+  /* 여기에 width가 없기때문에
+    hover시, width를 변경해도
+    transition 애니메이션이 발동하지않는다.
+    그냥 껌뻑이면서 바로 크기가 커짐
+  */
+  /* transition: width 0.5s ease; */
+}
+
+.landing .landing__btn:hover {
+  letter-spacing: 2px;
+  /* width: 200px; */
+}
+
+.landing .landing__content {
+  position: relative;
+  flex: 60%;
+  display: flex;
+  align-items: center;
+}
+.landing .landing__content img {
+  width: 90%;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.color-box {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: linear-gradient(to right, #d34d75, rgb(255, 149, 149));
+  height: 100%;
+  width: 80%;
+  z-index: -1;
+  transform: translate(150px, 80px);
+}
+
+/* social */
+.social {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.social .social__item {
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  margin: auto 20px;
+}
+.social .social__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* 미디어 쿼리 */
+/* 아이패드 pro */
+@media only screen and (max-width: 1024px) {
+  .landing {
+    flex-direction: column-reverse;
+  }
+  .landing .landing__text {
+    margin-top: 5rem;
+  }
+  .landing .landing__content {
+    width: 70%;
+  }
+}
+
+/* M - 768px 부터 (포함) */
+@media only screen and (max-width: 768px) {
+  .navbar .navbar__menus {
+    /* display: none; */
+    width: 100%;
+    height: 0px;
+    background: linear-gradient(to right, #d34d75, rgb(255, 149, 149));
+    position: absolute;
+    top: 70px;
+    right: 0;
+    z-index: 2;
+    transition: 0.5s ease;
+    overflow: hidden;
+  }
+  .navbar .navbar__menus.active {
+    height: 150px;
+  }
+  .navbar .navbar__menus ul li {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 8%;
+  }
+  .navbar .navbar__menus ul li a {
+    color: #fff;
+  }
+  .navbar .navbar__btn {
+    display: block;
+  }
+  .landing {
+    flex-direction: column-reverse;
+    margin: 50px 0;
+  }
+  .landing .landing__content {
+    flex-basis: 100%;
+    margin-bottom: 3rem;
+  }
+  .landing .landing__text h2 {
+    font-size: 2rem;
+  }
+  .landing .landing__text h3 {
+    font-size: 1.2rem;
+  }
+
+  .color-box {
+    transform: translate(80px, 30px);
+  }
+}

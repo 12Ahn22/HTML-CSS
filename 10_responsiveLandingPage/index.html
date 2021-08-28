@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Responsivie LandingPage</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- navbar -->
+      <header class="navbar">
+        <img
+          src="http://www.bardfieldacademy.org/wp-content/uploads/2016/07/Google-logo-2015-G-icon.png"
+          alt="logo"
+          class="navbar__logo"
+        />
+        <nav class="navbar__menus" id="menuList">
+          <ul>
+            <li>
+              <a href="#">Lorem ipsum dolor</a>
+            </li>
+            <li><a href="#">amet consectetur</a></li>
+            <li><a href="#">adipisicing</a></li>
+            <li><a href="#">Suscipit dicta</a></li>
+          </ul>
+        </nav>
+        <button class="navbar__btn btn" onclick="toggleMenu()">
+          <img src="https://i.ibb.co/HrfVRcx/menu.png" alt="menu button" />
+        </button>
+      </header>
+      <!--  -->
+      <section class="landing">
+        <div class="landing__text">
+          <h2>Lorem ipsum <br />dolor sit amet.</h2>
+          <h3>
+            ndae dolorum natus! Hic fugit suscipit nulla cum assumenda ratione?
+          </h3>
+          <h4>$32.4</h4>
+          <button class="landing__btn btn">Buy Now 👈</button>
+        </div>
+        <!--  -->
+        <div class="landing__content">
+          <img src="../src/img/2.jpg" alt="city" />
+          <div class="color-box"></div>
+        </div>
+      </section>
+      <!-- social -->
+      <ul class="social">
+        <li class="social__item">
+          <a href="#"><img src="../src/img/facebook.png" alt="" /></a>
+        </li>
+        <li class="social__item">
+          <a href="#"><img src="../src/img/instagram.png" alt="" /></a>
+        </li>
+        <li class="social__item">
+          <a href="#"><img src="../src/img/twitter.png" alt="" /></a>
+        </li>
+      </ul>
+    </div>
+
+    <script>
+      const menuList = document.getElementById('menuList');
+      const toggleMenu = () => {
+        menuList.classList.toggle('active');
+      };
+    </script>
+  </body>
+</html>
