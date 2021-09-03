@@ -1,24 +1,16 @@
-# HTML&CSS 강의
+# TIL 코드들을 모아놓은 레포지토리
 
-[Online Tutorials](https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog)
+> `유튜브`&`강의`를 보고 작업한 내용들을 저장하는 레포지토리입니다.
 
-[Traversy Media](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA)
+- **HTML & CSS**
 
-[Easy Tutorials](https://www.youtube.com/channel/UCkjoHfkLEy7ZT4bA2myJ8xA)
+  완전 똑같이 따라하는 것이 아니라, BEM 방법론을 적용하거나 CSS를 좀 더 효율적으로 수정하거나, 시맨틱 마크업을 적용해 만들고 있습니다.
 
-[Tuat Tran Anh](https://www.youtube.com/channel/UCnNgtK4tGlWcceXVzoyTg8Q)
+  목표는 `HTML` & `CSS`와 친해지는 것입니다 😉
 
-유튜브를 보고 작업한 내용들을 저장하는 레포지토리입니다.
+- **어쩌다보니 `JS`도 추가** ✋
 
-### `9개`
-
-하루에 하나씩 꼭 하려고 노력합니다.
-
-- 완전 똑같이 따라하는 것이 아니라, BEM 방법론을 적용하거나 CSS를 좀 더 효율적으로 수정하거나, 시맨틱 마크업을 적용해 만들고 있습니다.
-- 목표는 `HTML` & `CSS`와 친해지는 것입니다 😉
-- 어쩌다보니 `JS`도 추가 ✋
-
-### 목차
+### 목차 `10개`
 
 1. ✨ [스타벅스 랜딩페이지](./1_starbucks) - 포지션과 정렬
 2. ✨ [비디오 백그라운드](./2_video) - 비디오를 배경으로 사용하기
@@ -30,3 +22,15 @@
 8. ✨ [CSS 애니메이션](./8_cssAnimation) - HTML과 CSS만을 사용한 애니메이션 만들기
 9. ✨ [드롭다운](./9_dropBox) - HTML&CSS로 드롭다운, JS로 리액트를 흉내내서 드롭다운 만들어보기
 10. ✨ [반응형 랜딩페이지](./10_responsiveLandingPage) - flex와 미디어 쿼리를 사용해 랜딩페이지 만들기
+
+### 참고
+
+[모던 자바스크립트 입문] (https://github.com/gilbutITbook/006960)
+
+[Online Tutorials](https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog)
+
+[Traversy Media](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA)
+
+[Easy Tutorials](https://www.youtube.com/channel/UCkjoHfkLEy7ZT4bA2myJ8xA)
+
+[Tuat Tran Anh](https://www.youtube.com/channel/UCnNgtK4tGlWcceXVzoyTg8Q)
