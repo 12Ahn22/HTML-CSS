@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>HTML5 | Canvas</title>
+  </head>
+  <body>
+    <canvas id="canvas1" width="500" height="500"></canvas>
+    <canvas id="canvas2" width="500" height="500"></canvas>
+    <canvas id="canvas3" width="500" height="500"></canvas>
+    <script>
+      // 1. 캔버스 요소를 가져온다.
+      const canvas1 = document.getElementById('canvas1');
+      // 2. 캔버스 렌더링 컨텍스트를 가져온다.
+      // 2d는 2차원, webgl은 3차원 webgl 사용 시
+      const ctx = canvas1.getContext('2d'); // 캔버스의 드로잉 컨텍스트를 반환
+      // 3. 그린다.
+      ctx.fillStyle = 'red';
+      // ctx.fillRect(x좌표, y좌표, 너비, 높이);
+      ctx.fillRect(10, 10, 150, 100);
+
+      // 패쓰 사용하여 그림 그리기
+      ctx.beginPath(); // 패쓰 시작
+      ctx.moveTo(200, 200); // 이동
+      ctx.lineTo(220, 220); // 라인 그리기 ( 실제 선 그리는것이 아님 )
+      ctx.lineTo(240, 200);
+      ctx.closePath(); // 패쓰 종료
+      ctx.stroke(); // 실제 선 그리기
+      ctx.fill(); // 색칠하기
+
+      // 캔버스로 그림 읽기
+      const ctx2 = document.getElementById('canvas2').getContext('2d');
+      // 1. 이미지 객체 생성
+      const img = new Image(); // HTMLImageElement 객체를 생성하는 생성자 = <img>태그 생성
+      // 2. 이미지를 읽은 후, 캔버스에 그리기
+      img.onload = function () {
+        ctx2.drawImage(img, 0, 0, 500, 800);
+      };
+      img.src = '../src/img/1.jpg';
+
+      // Canvas안에 있는 이미지 데이터를 가져올 수있다.
+      const imgData = ctx.getImageData(50, 50, 100, 50);
+      console.log(imgData);
+
+      const ctx3 = document.getElementById('canvas3').getContext('2d');
+
+      ctx3.putImageData(imgData, 150, 100);
+    </script>
+  </body>
+</html>
