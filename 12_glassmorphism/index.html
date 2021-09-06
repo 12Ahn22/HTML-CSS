@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <article class="card">
+    <article class="card" id="card">
       <div class="card__img-box">
         <img src="../src/img/1.jpg" alt="profile" />
       </div>
@@ -32,5 +32,22 @@
         </ul>
       </div>
     </article>
+    <!-- script -->
+    <script>
+      // 해당 카드의 좌표와 마우스 위치를 사용해 움직이는 css 구현하기
+      const card = document.querySelector('#card');
+      card.addEventListener('mousemove', (e) => {
+        const rect = e.target.getBoundingClientRect();
+        const x =
+          e.offsetX <= rect.width / 2
+            ? (rect.width / 2 - e.offsetX) / 10
+            : (rect.width / 2 - e.offsetX) / 10;
+        const y =
+          e.offsetY <= rect.height / 2
+            ? (rect.height / 2 - e.offsetY) / 10
+            : (rect.height / 2 - e.offsetY) / 10;
+        card.style.transform = `perspective(1000px) rotateX(${y}deg) rotateY(${-x}deg) `;
+      });
+    </script>
   </body>
 </html>
