@@ -22,6 +22,8 @@
 8. ✨ [CSS 애니메이션](./8_cssAnimation) - HTML과 CSS만을 사용한 애니메이션 만들기
 9. ✨ [드롭다운](./9_dropBox) - HTML&CSS로 드롭다운, JS로 리액트를 흉내내서 드롭다운 만들어보기
 10. ✨ [반응형 랜딩페이지](./10_responsiveLandingPage) - flex와 미디어 쿼리를 사용해 랜딩페이지 만들기
+11. ✨ [캔버스 사용해보기](./11_canvas) - 캔버스
+12. ✨ [Glassmorphism 마우스 모션 카드](./12_glassmorphism) - perspective와 backdrop-filter, getBoundingClientRect로 요소 크기/위치 정보 가져와 사용해 움직이는 카드 만들기
 
 ### 참고
 
