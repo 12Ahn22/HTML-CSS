@@ -24,10 +24,11 @@
 10. ✨ [반응형 랜딩페이지](./10_responsiveLandingPage) - flex와 미디어 쿼리를 사용해 랜딩페이지 만들기
 11. ✨ [캔버스 사용해보기](./11_canvas) - 캔버스
 12. ✨ [Glassmorphism 마우스 모션 카드](./12_glassmorphism) - perspective와 backdrop-filter, getBoundingClientRect로 요소 크기/위치 정보 가져와 사용해 움직이는 카드 만들기
+13. ✨ [Isometric 효과 CSS로 만들기](./13_isometric) - css로 입체적인 애니메이션 효과 만들기
 
 ### 참고
 
-[모던 자바스크립트 입문] (https://github.com/gilbutITbook/006960)
+[모던_자바스크립트_입문] (https://github.com/gilbutITbook/006960)
 
 [Online Tutorials](https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog)
 
