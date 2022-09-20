@@ -25,6 +25,8 @@
 11. ✨ [캔버스 사용해보기](./11_canvas) - 캔버스
 12. ✨ [Glassmorphism 마우스 모션 카드](./12_glassmorphism) - perspective와 backdrop-filter, getBoundingClientRect로 요소 크기/위치 정보 가져와 사용해 움직이는 카드 만들기
 13. ✨ [Isometric 효과 CSS로 만들기](./13_isometric) - css로 입체적인 애니메이션 효과 만들기, CSS 가상 클래스와 가상 요소의 차이
+14. ✨ [체크박스](./14_CheckBox_1) - 입체적인 체크박스 만들어보기
+15. ✨ [Glitch 효과](./15_glitch) - css로 간단하게 Glitch 효과 만들기
 
 ### 참고
 
