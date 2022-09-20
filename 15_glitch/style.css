@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background: #222;
+  color: #fff;
+}
+.glitch {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* top, left 50%로 했을 때, 왼쪽 최상단이 가운데로 오도록 설정되니까
+  translate로 전체크기의 반을 이동시켜야함. translate는 퍼센트로 사용 시, 요소 크기가 기준 */
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  letter-spacing: 8px;
+  cursor: pointer;
+}
+.glitch::before,
+.glitch::after {
+  content: "GLITCH";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  visibility: hidden;
+}
+.glitch:hover::before {
+  visibility: visible;
+  animation: glitch 0.3s linear infinite;
+  color: #e91e63;
+  z-index: -2;
+}
+.glitch:hover::after {
+  visibility: visible;
+  animation: glitch 0.3s linear infinite reverse;
+  color: #2196f3;
+  z-index: -1;
+}
+
+@keyframes glitch {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  20% {
+    top: -5px;
+    left: -5px;
+  }
+  40% {
+    top: 5px;
+    left: 5px;
+  }
+  60% {
+    top: -5px;
+    left: 5px;
+  }
+  80% {
+    top: 5px;
+    left: -5px;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
