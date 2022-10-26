@@ -1,6 +1,6 @@
 # GLOW
 
-[참고 사이트](!https://www.youtube.com/watch?v=nmC6QDCB7zI)
+[참고 사이트](https://www.youtube.com/watch?v=nmC6QDCB7zI)
 
 ![image](https://user-images.githubusercontent.com/44540726/197915136-668934f2-9320-4f4e-9ef3-3678cacb0ec5.png)
 
